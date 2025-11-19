@@ -1,0 +1,1 @@
+export const db_name="idle_resource_detection_db"

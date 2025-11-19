@@ -1,0 +1,67 @@
+# --- Dependencies ---
+# Node package manager directory
+/node_modules
+
+# Yarn PnP files
+.yarn/cache
+.pnp.*
+
+# pnpm-store directory (if using pnpm)
+#/.pnpm-store
+
+# Lock files that are usually automatically generated
+# by npm or yarn (if you only use one, you can comment out the others)
+package-lock.json
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+.pnpm-debug.log*
+
+# --- Environment and Configuration ---
+# Environment variables file (sensitive data)
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration and state files
+.npmrc
+.yarnrc
+.yarnrc.yml
+.yarn/install-state.gz
+
+# VS Code directory (often contains workspace state)
+.vscode/
+
+# --- Build, Output, and Temporary Files ---
+# Compiled JavaScript/TypeScript output directories
+/dist
+/build
+/out
+/es
+/coverage
+
+# Logs and system files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+.DS_Store # macOS system files
+Thumbs.db # Windows system files
+
+# Compiled binaries and native modules
+*.node
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Temporary editor files
+*~
+#*#
+
+# --- Testing and Coverage ---
+/coverage
+/.nyc_output
+/test-results.json
