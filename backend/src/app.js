@@ -1,11 +1,8 @@
-import express from "express"
+import express from "express"; // import express module to create express application
 import cors from "cors"; // import cors module to enable cross-origin resource sharing
 import cookieParser from "cookie-parser"; // import cookie-parser module to parse cookies attached to the client request object
 
-
-// creating express application 
-const app = express();
-
+const app = express(); // create an instance of an Express application
 
 //  configuring app to use cors middleware.
 
@@ -35,13 +32,6 @@ app.use(express.static('public'));
 app.use(cookieParser());
 
 
-// // Routs import 
-
-// import healthcheckrout from "./routes/healthcheck.route.js "
-
-// app.use("/api/v1/healthcheck",healthcheckrout)
 
 
-
-
-export {app}
+export  {app}; // export the app object to be used in other modules.
