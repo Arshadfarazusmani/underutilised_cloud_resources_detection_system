@@ -32,6 +32,14 @@ app.use(express.static('public'));
 app.use(cookieParser());
 
 
+// routs import 
 
+import UserRouter from './routes/auth.routes.js';
+import ResourceRouter from './routes/resource.routes.js';
+import PredictRouter from './routes/predict.routes.js';
+
+app.use('/api/v1/users', UserRouter);
+app.use('/api/v1/resources', ResourceRouter);
+app.use('/api/v1/predict', PredictRouter);
 
 export  {app}; // export the app object to be used in other modules.
